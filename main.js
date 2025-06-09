@@ -13,7 +13,7 @@ function createWindow() {
   });
 
   // Load the index HTML file
-  win.loadFile("index.html");
+  win.loadFile("src/lessons/lesson-01/explanation.html");
 }
 
 // Open  the first window, if the app is ready.

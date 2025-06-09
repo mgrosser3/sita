@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <title>SiTA – Erste Übung: Home-Row</title>
+    <link rel="stylesheet" href="exercise.css" />
+  </head>
+  <body>
+    <div class="exercise-box">
+      <h2>🧠 Übung: Home-Row-Tippen</h2>
+      <p>
+        Tippe die angezeigte Buchstabenfolge – ohne auf die Tastatur zu schauen!
+      </p>
+      <div class="target-text" id="targetText">asdf jklö</div>
+      <input
+        type="text"
+        id="userInput"
+        placeholder="Hier tippen..."
+        autocomplete="off"
+        autofocus
+      />
+      <div class="feedback" id="feedback"></div>
+      <button onclick="generateNewText()">Neue Aufgabe</button>
+    </div>
+
+    <script src="exercise.js"></script>
+  </body>
+</html>
