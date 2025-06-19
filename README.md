@@ -107,7 +107,7 @@ You are free to use, modify, and distribute it.
 
 ## 👨‍💻 Author
 
-**Michael Grosser**
+**Martin Großer**
 📬 [github.com/mgrosser3](https://github.com/mgrosser3)
 
 ---
@@ -115,17 +115,3 @@ You are free to use, modify, and distribute it.
 ## 📸 Preview (optional)
 
 > Add screenshots or GIF previews of the app in action here to showcase features.
-
----
-
-```
-
----
-
-Let me know if you'd like:
-- A badge section (e.g., "Made with Electron", License, OS support)
-- GitHub Actions CI config
-- Markdown preview styling tweaks (e.g., for npm or GitHub Pages)
-
-I'd also be happy to help you insert this into your repository directly or make a PR-ready version.
-```
