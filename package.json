@@ -2,6 +2,14 @@
   "name": "SiTA",
   "version": "0.0.1",
   "description": "SiTA (Simple Typing Assistant) is an open-source tool designed to help users learn and practice 10-finger typing skills.",
+  "license": "MIT",
+  "author": "Martin Großer",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder --win",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
   "homepage": "https://github.com/mgrosser3/sita#readme",
   "bugs": {
     "url": "https://github.com/mgrosser3/sita/issues"
@@ -10,14 +18,30 @@
     "type": "git",
     "url": "git+https://github.com/mgrosser3/sita.git"
   },
-  "license": "MIT",
-  "author": "Martin Großer",
-  "main": "main.js",
-  "scripts": {
-    "start": "electron .",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "devDependencies": {
-    "electron": "^36.4.0"
+    "electron": "^36.4.0",
+    "electron-builder": "^26.0.12"
+  },
+  "build": {
+    "appId": "org.mgrosser3.sita",
+    "productName": "SiTA",
+    "files": [
+      "main.js",
+      "src/**/*",
+      "assets/**/*",
+      "package.json"
+    ],
+    "directories": {
+      "buildResources": "assets"
+    },
+    "win": {
+      "target": "nsis"
+    },
+    "linux": {
+      "target": "AppImage"
+    },
+    "mac": {
+      "target": "dmg"
+    }
   }
 }
