@@ -1,0 +1,17 @@
+{
+  "id": "lesson-01",
+  "title": "Ausgangsposition",
+  "description": "Lerne die Ausgangsposition auf der Tastatur (ASDF – JKLÖ).",
+  "exercises": [
+    {
+      "id": "ex-01",
+      "text": "asdf jklö",
+      "hint": "Tastpunkte auf F und J ertasten."
+    },
+    {
+      "id": "ex-02",
+      "text": "fj dk jf sa",
+      "hint": "Tastpunkte auf F und J ertasten."
+    }
+  ]
+}

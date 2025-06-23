@@ -1,2 +1,5 @@
 # Installed Node.js modules
 node_modules/
+
+# distribution folder
+dist/

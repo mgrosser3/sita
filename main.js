@@ -1,19 +1,22 @@
 // import app and BrowserWindow
-const { shell, app, BrowserWindow } = require("electron");
+const { app, BrowserWindow } = require("electron");
+const path = require("path");
 
 // It represents our initial create window method.
 function createWindow() {
   const win = new BrowserWindow({
-    width: 800,
-    height: 600,
+    width: 1000,
+    height: 700,
     webPreferences: {
-      nodeIntegration: true,
-      contextIsolation: false,
+      preload: path.join(__dirname, "preload.js"),
+      nodeIntegration: false,
+      contextIsolation: true,
     },
   });
 
   // Load the index HTML file
-  win.loadFile("src/lessons/lesson-01/explanation.html");
+  //win.loadFile("src/lessons/lesson-01/explanation.html");
+  win.loadFile(path.join(__dirname, "src", "views", "index.html"));
 }
 
 // Open  the first window, if the app is ready.
