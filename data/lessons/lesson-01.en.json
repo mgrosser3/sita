@@ -1,17 +1,42 @@
 {
   "id": "lesson-01",
-  "titel": "Home Row Basics",
-  "description": "Learn the base position on the keyboard (ASDF - JKLÖ). Place your fingers on F/J and return here after every keystroke.",
+  "title": "Home-Row Position",
+  "description": "Learn the home-row position on your keyboard ...",
   "exercises": [
     {
-      "id": "ex-01",
-      "text": "asdf jklö",
-      "hint": "Focus on finding the bumps on F and J."
+      "description": "Description for Exercise 1 goes here ...",
+      "type": "random",
+      "charset": "fj",
+      "length": 80,
+      "lines": 2
     },
     {
-      "id": "ex-02",
-      "text": "fj dk jf sa",
-      "hint": "Use your index fingers for F and J."
+      "description": "Description for Exercise 2 goes here ...",
+      "type": "random-char",
+      "charset": "fjdk",
+      "length": 80,
+      "lines": 2
+    },
+    {
+      "description": "Description for Exercise 3 goes here ...",
+      "type": "random-char",
+      "charset": "fjdksl",
+      "length": 80,
+      "lines": 2
+    },
+    {
+      "description": "Description for Exercise 3 goes here ...",
+      "type": "random-char",
+      "charset": "fjdkslaö",
+      "length": 80,
+      "lines": 2,
+    },
+    {
+      "description": "Description for Exercise 4 goes here ...",
+      "type": "random-word",
+      "charset": "hals,fass,gas,glas,lass,saal,alga,aha"
+      "length": 80,
+      "lines": 2,
     }
   ]
 }
