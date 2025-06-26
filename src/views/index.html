@@ -3,13 +3,21 @@
   <head>
     <meta charset="UTF-8" />
     <title>SiTA Dashboard</title>
-    <link rel="stylesheet" href="../styles/main.css" />
+    <link rel="stylesheet" href="../styles/dashboard.css" />
   </head>
   <body>
-    <div class="dashboard">
-      <h1>SiTA - Lessons</h1>
-      <ul id="lesson-list"></ul>
-    </div>
-    <script type="module" src="../dashboard.js"></script>
+    <header>SiTA – Touch Typing Trainer</header>
+    <main>
+      <div class="lesson-card" onclick="openLesson('lesson-01')">
+        <h2>Home Row</h2>
+        <p>Learn the basic finger position (asdf jklö)</p>
+      </div>
+      <!-- weitere Lektionen -->
+    </main>
+    <script>
+      function openLesson(id) {
+        window.location.href = `lesson-view.html?lesson=${id}`;
+      }
+    </script>
   </body>
 </html>

@@ -1,4 +1,4 @@
-export class i18n {
+export class I18n {
   constructor(lang = "en") {
     this.lang = lang;
     this.translations = {};
