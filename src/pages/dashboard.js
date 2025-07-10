@@ -11,12 +11,19 @@ function loadStyle(href) {
 loadStyle("./styles/dashboard.css");
 loadStyle("./styles/modal-window.css");
 
-// TODO: remove side effect -> is there a functional way?
-export function renderDashboard(container) {
-  container.innerHTML = "";
+/**
+ * Creates a dashbaord element with all lesson cards.
+ * @returns {HTMLElement} dashboard HTML element
+ */
+export function renderDashboard() {
+  const dashboard = document.createElement("section");
+  dashboard.classList.add("dashboard");
+
   const lessons = getAllLessons();
   lessons.forEach((lesson) => {
     const card = createLessonCard(lesson);
-    container.appendChild(card);
+    dashboard.appendChild(card);
   });
+
+  return dashboard;
 }
