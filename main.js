@@ -13,6 +13,9 @@ function createWindow() {
     },
   });
 
+  // Remove menu bar
+  win.setMenu(null);
+
   // Load the index HTML file
   win.loadFile("src/index.html");
 }
