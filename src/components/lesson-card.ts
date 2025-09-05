@@ -1,7 +1,8 @@
 import { createModalWindow } from "../components/modal-window.js";
 import { createTypingExcercise } from "./typing-exercise.js";
+import type { Lesson } from "../models/lesson.js";
 
-export function createLessonCard(lesson) {
+export function createLessonCard(lesson: Lesson): HTMLElement {
   const card = document.createElement("div");
   card.classList.add("lesson-card");
   card.dataset.lessonId = lesson.id;
@@ -22,6 +23,6 @@ export function createLessonCard(lesson) {
   return card;
 }
 
-function startLesson(lesson) {
+function startLesson(lesson: Lesson): void {
   createModalWindow(createTypingExcercise("Das ist nur ein Test"));
 }

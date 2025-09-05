@@ -1,7 +1,8 @@
 import { createLessonCard } from "../components/lesson-card.js";
 import { getAllLessons } from "../config/lessons.js";
+import type { Lesson } from "../models/lesson.js";
 
-function loadStyle(href) {
+function loadStyle(href: string): void {
   const link = document.createElement("link");
   link.rel = "stylesheet";
   link.href = href;
@@ -15,7 +16,7 @@ loadStyle("./styles/modal-window.css");
  * Creates a dashbaord element with all lesson cards.
  * @returns {HTMLElement} dashboard HTML element
  */
-export function renderDashboard() {
+export function renderDashboard(): HTMLElement {
   const dashboard = document.createElement("section");
   dashboard.classList.add("dashboard");
 

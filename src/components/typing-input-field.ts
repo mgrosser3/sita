@@ -1,7 +1,10 @@
 /** Creates a input field with visible placeholder text.
     The placholder text colors red if the input differs
     from the exercise text. */
-export function createTypingInputField(text, onUpdate) {
+export function createTypingInputField(
+  text: string,
+  onUpdate: Function,
+): HTMLElement {
   const container = document.createElement("div");
   container.classList.add("typing-input-field");
 
@@ -20,7 +23,7 @@ export function createTypingInputField(text, onUpdate) {
   const input = document.createElement("input");
   input.type = "text";
   input.classList.add("typing-input");
-  input.setAttribute("maxlength", text.length);
+  input.setAttribute("maxlength", text.length.toString());
 
   input.addEventListener("input", () => {
     const value = input.value.split("");

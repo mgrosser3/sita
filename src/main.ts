@@ -17,7 +17,7 @@ function createWindow() {
   // win.setMenu(null);
 
   // Load the index HTML file
-  win.loadFile("src/index.html");
+  win.loadFile("dist/index.html");
 }
 
 // Open  the first window, if the app is ready.

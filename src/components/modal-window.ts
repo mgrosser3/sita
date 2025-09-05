@@ -1,4 +1,4 @@
-export function createModalWindow(content, options = {}) {
+export function createModalWindow(content: HTMLElement, options = {}): void {
   const modalWindow = document.createElement("div");
   modalWindow.classList.add("modal-window");
 
